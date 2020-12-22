@@ -52,11 +52,13 @@ main {
 #img-div {
     background: #fff !important;
     padding: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 0;
 }
 
 figure #image {
     display: block;
+    margin: 0 auto;
+    max-width: 878px;
     width: 100%;
     padding-bottom: 7px;
 }
@@ -123,8 +125,31 @@ figure #image {
 }
 
 #tribute-info article p {
-    word-spacing: .30ch;
-    line-height: 1.65em;
+    word-spacing: .20ch;
+    line-height: 1.45em;
     font-weight: 350;
     color: #000;
+    font-size: 1.75rem;
+}
+
+footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+footer {
+    background: #2c2c2c;
+    color: #fff;
+    min-height: 40px;
+    padding: 10px;
+}
+
+footer a {
+    color: aqua;
+    text-decoration: underline;
+    vertical-align: center;
+}
+
+footer a:visited {
+    color: rgb(137, 90, 214);
 }
