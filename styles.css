@@ -125,9 +125,10 @@ figure #image {
 }
 
 #tribute-info article p {
-    word-spacing: .20ch;
-    line-height: 1.45em;
-    font-weight: 350;
+    padding-top: 9px;
+    word-spacing: .1ch;
+    line-height: 1.55em;
+    font-weight: 400;
     color: #000;
     font-size: 1.75rem;
 }
