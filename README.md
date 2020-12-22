@@ -5,16 +5,16 @@ Tribute Page Project about inventor and bussinessman [Garrett Morgan](https://en
 
 In this project, we were asked to build a responsive web design website for a blog post. Additionally to design the website from scatch, we were asked to implement some given features to pass.
 
-For more information about this project, Visit [here](project-doc).
+For more information about this project, Visit [here][project-doc].
 
-This Responsive Web Design was made using [**HTML5**](html),
-[**CSS**](css), and [**BootStrap4**](bootstrap).
+This Responsive Web Design was made using [**HTML5**][html],
+[**CSS**][css], and [**BootStrap4**][bootstrap].
 
-### Demo :rocket: [Tribute Blog](githubpage)
+### Demo :rocket: [Tribute Blog][githubpage]
 
 ## Getting started
 
-This repo can be deployed locally on your machine using [**live-server**](live-server).
+This repo can be deployed locally on your machine using [**live-server**][live-server].
 
 **Run from terminal** _(requires [NodeJS](https://nodejs.org/en/download/))_
 
@@ -41,11 +41,11 @@ This repo can be deployed locally on your machine using [**live-server**](live-s
 
 ## Built using
 
-- [**HTML**](html)
+- [**HTML**][html]
 
-- [**CSS**](css)
+- [**CSS**][css]
 
-- [**BootStrap4**](bootstrap)
+- [**BootStrap4**][bootstrap]
 
 [githubpage]: https://cbedroid.github.io/Tribute-Page/
 [project-doc]: https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page
