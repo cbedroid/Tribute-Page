@@ -1,0 +1,130 @@
+html {
+    /* Setting a base font size of 10px give us easier rem calculations
+       Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+     */
+    font-size: 10px;
+}
+
+:root {
+    --secondary: #64707d;
+}
+
+body {
+    /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    margin: 0;
+}
+
+h1 {
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    color: #477ca7;
+}
+
+a:visited {
+    color: #74638f;
+}
+
+.lg-title {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+#title {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+}
+
+.subtitle {
+    margin-top: 15px;
+}
+
+main {
+    padding-top: 50px;
+}
+
+#img-div {
+    background: #fff !important;
+    padding: 30px;
+    padding-bottom: 15px;
+}
+
+figure #image {
+    display: block;
+    width: 100%;
+    padding-bottom: 7px;
+}
+
+.user-tray {
+    color: var(--secondary);
+    background: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.user-tray .wrapper {
+    vertical-align: middle;
+    padding: 3px 2px;
+}
+
+.user-tray span {
+    vertical-align: middle;
+    font-size: 1.45rem;
+    padding: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.user-tray p {
+    margin-top: 2px;
+    vertical-align: middle;
+}
+
+.user-tray img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.user-tray span.badge {
+    font-weight: 600;
+}
+
+.user-tray i {
+    color: #fff;
+}
+
+.user-tray #user-text p {
+    vertical-align: middle;
+}
+
+.user-tray #user-text small {
+    vertical-align: middle;
+}
+
+.user-tray #icon-user {
+    color: #111;
+}
+
+.user-tray #user-text a {
+    font-weight: 700;
+}
+
+#tribute-info article {
+    background: #fff;
+    padding: 10px 20px;
+}
+
+#tribute-info article p {
+    word-spacing: .30ch;
+    line-height: 1.65em;
+    font-weight: 350;
+    color: #000;
+}
