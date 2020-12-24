@@ -28,7 +28,7 @@ This repo can be deployed locally on your machine using [**live-server**][live-s
   # Go live (requires NodeJS)
   live-server --port=5500 .
 
-  # Open Broswer to view website
+  # Open Browser to view website
   http:localhost:5500
 ```
 
