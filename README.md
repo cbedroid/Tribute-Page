@@ -35,8 +35,8 @@ This repo can be deployed locally on your machine using [**live-server**][live-s
 **Run in VSCode**
 1.  Launch VSCode.
 2.  Open VSCode terminal, then clone repo  `git clone https://github.com/cbedroid/Tribute-Page.git`.
-3   Open `**Tribute-Page**` folder.
-4.  ~(Goto 6 if you already have live-server installed)~ Launch VS Code Quick Open by pressing `Ctrl+P`,
+3.  Open `**Tribute-Page**` folder.
+4.  *(Goto 6 if you already have live-server installed)* Launch VS Code Quick Open by pressing `Ctrl+P`,
 5.  Paste in _`ext install ritwickdey.LiveServer`_
 6.  Go Live - click Go Live at the bottom right of screen.
 7.  Open web browser to `localhost:5500`.
