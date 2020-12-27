@@ -51,7 +51,7 @@ main {
 
 #img-div {
     background: #fff !important;
-    padding: 30px;
+    padding: 5px;
     padding-bottom: 0;
 }
 
@@ -125,12 +125,19 @@ figure #image {
 }
 
 #tribute-info article p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "open Sans",sans-serif;
+    text-align: left;
     padding-top: 9px;
-    word-spacing: .1ch;
-    line-height: 1.55em;
+    letter-spacing: -0.044px;
+    line-height: 1.78em;
     font-weight: 400;
     color: #000;
     font-size: 1.75rem;
+}
+
+#tribute-info article p:not(:first-child) {
+    text-indent: 20px;
 }
 
 footer {
@@ -153,4 +160,16 @@ footer a {
 
 footer a:visited {
     color: rgb(137, 90, 214);
+}
+
+@media screen and (max-width: 455px) {
+    #tribute-info article p {
+        text-align: left;
+        padding-top: 9px;
+        letter-spacing: -0.775px;
+        line-height: 1.75em;
+        font-weight: 300;
+        color: #000;
+        font-size: 1.75rem;
+    }
 }
