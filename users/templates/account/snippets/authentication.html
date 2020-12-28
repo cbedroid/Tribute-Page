@@ -1,0 +1,55 @@
+{% load static %}
+{% load crispy_forms_tags %}
+{% load widget_tweaks %}
+<section id="login_section">
+  {% include 'core/snippets/alert_message.html' %}
+  <hr>
+  <div class="container">
+    <div class="row justify-items-center">
+      <div class="col-12 col-md-12 col-lg-6">
+        <div class="m-widget m-account-widget">
+          <div class="m-banner" id="signup_banner">
+            <div class="m-banner m-banner--header">
+              {% if form.fields.email %}
+              {# Register form banner text #}
+              <h1 class="m-title m-title--up">Create An Account</h1>
+              <p class="m-subtitle">Signup to get the latest news and updates!</p>
+              {% else %}
+              {# Login form banner text #}
+              <h1 class="m-title m-title--up">Sign In</h1>
+              <p class="m-subtitle">Connect now to stay tune with the latest news and update </p>
+              {% endif %}
+            </div>
+          </div>
+          <hr class="hr hr--dark">
+          <form method="POST">
+            {% csrf_token %}
+            {{form|crispy }}
+            {% if form.fields.email %}
+            <button class="btn btn-outline-success" type="submit">Sign Up</button>
+            <div class="border-top pt-3">
+              <small class="text-muted">
+                Already have an Account? <a class="ml-2 text-primary" href="{% url 'account_login' %}">Sign Up Now</a>
+              </small>
+            </div>
+            {% else %}
+            <button class="btn btn-outline-primary" type="submit">Login</button>
+            <small class="text-primary ml-2">
+              <a href="{% url 'password_reset' %}">Forgot Password?</a>
+            </small>
+            <div class="border-top pt-3">
+              <small class="text-muted">
+                Need An account? <a class="ml-2 text-primary" href="{% url 'account_signup' %}">Sign Up Now</a>
+              </small>
+            </div>
+            {% endif %}
+            <input type="hidden" name="next" value="{{ next }}">
+          </form>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 col-lg-6">
+      <!-- Place aside here -->
+      </div>
+    </div>
+  </div>
+</section>

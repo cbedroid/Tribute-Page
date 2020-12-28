@@ -1,0 +1,106 @@
+ {% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}
+Tribute Page | {{ blog.title }}
+{% endblock title %}
+
+{% block body %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div id="header" class="text-center">
+        <h1 id="title" class="lg-title">{{ blog.title }}</h1>
+        <h3 class="subtitle font-italic font-weight-light">
+          {{ blog.subtitle }}
+        </h3>
+        <div id="img-div">
+          <figure>
+            <img id="image" class="img-fluid" src="{{blog.image.url}}" alt="{{blog.title}} Image">
+            <figurecaption id="img-caption">
+              {{blog.image_title}}
+            </figurecaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tribute Section-->
+<section id="tribute-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="link-tray bg-light">
+          <span class="badge badge-info">
+            <a href="https://linkedin.com/in/cornelius-brooks" target="_blank">
+              <i class="fa fa-linkedin"> linkedin</i>
+            </a>
+          </span>
+          <span class="badge badge-secondary">
+            <a href="https://github.com/cbedroid" target="_blank">
+              <i class="fa fa-github"> github</i>
+            </a>
+          </span>
+          <span class="badge badge-dark">
+            <a href="https://freecodecamp/cbedroid" target="_blank">
+              <i class="fa fa-free-code-camp text-light"> freecode-camp</i>
+            </a>
+          </span>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="author d-flex justify-content-center align-content-center">
+          <img class="author__img img-thumbnail" src="https://avatars2.githubusercontent.com/u/54720725?s=60&u=9a67512e5733a21ea3d39fb1d7ef087511518910&v=4" alt="author {{blog.user.username}} image">
+          <div class="author__text">
+            <p>published by
+              <a href="https://www.freecodecamp.org/cbedroid">
+                Cbedroid
+              </a>
+            </p>
+            <p>
+              <small>Uploaded - {{blog.created|date:"b, t"|title}}</small>
+              <small class="mx-2">&#9866;</small>
+              <small> 2 min read</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--blog Content-->
+    <div class="row">
+      <div class="col-12 col-lg-9 mx-auto">
+        <article class="article">
+          <h1 class="article__title"><strong>{{blog.article.headline}}</strong></h1>
+          <div class="article__content text-justify mt-4 px-2 px-sm-4">
+            {# paragraph 1 #}
+            <p>
+              {{blog.article.main_content|safe}}
+            </p>
+
+            {# paragraph 2 #}
+            {% with blog.article.second_content as paragraph_2 %}
+            {% if paragraph_2 %}
+            <p>{{paragraph_2|safe}}</p>
+            {% endif %}
+            {% endwith %}
+
+            {# paragraph 3 #}
+            {% with blog.article.third_content as paragraph_3 %}
+            {% if paragraph_3 %}
+            <p>{{paragraph_3|safe}}</p>
+            {% endif %}
+            {% endwith %}
+          </div>
+        </article>
+        <div class="blog-outro text-left my-5">
+          <p class="blog-outro__text"> Want to learn more about Garrett Morgan. Visit
+            <a class="blog-outro__link" id="blog-link" href="https://en.wikipedia.org/wiki/Garrett_Morgan" target="_blank">
+              Wikipedia</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endblock body %}

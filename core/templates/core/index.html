@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+{% block body %}
+<section id="site-section-index">
+  <div id="site-index">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="text-center">Choose a Blog</h3>
+        <ul>
+          {% for blog in blogs  %}
+          <li> <a href="{{ blog.get_absolute_url }}">{{blog.title}} - {{blog.article.headline}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock body %}
