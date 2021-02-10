@@ -29,7 +29,7 @@ This repo can be deployed locally on your machine using [**live-server**][live-s
   live-server --port=5500 .
 
   # Open Browser to view website
-  http:localhost:5500
+  http://localhost:5500
 ```
 
 **Run in VSCode**
